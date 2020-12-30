@@ -1,0 +1,18 @@
+.important
+{
+    font-style: italic;
+    font-weight: bold;
+    list-style-image: url('hourglass32.png');
+}
+.other
+{
+    list-style-image: url('script32.png');
+}
+footer
+{
+    text-align: center;
+}
+.navpad
+{
+    padding-top: 13px;
+}

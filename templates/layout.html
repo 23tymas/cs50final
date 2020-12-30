@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- https://favicon.io/emoji-favicons/mantelpiece-clock/ -->
+    <link href="../static/clock.ico" rel="icon">
+
+    <link href="../static/style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light shadow-sm sticky-top" id="navbar" style="text-align: left">
+            <ul class="nav">
+                <li>
+                    <a href="/" class="nav-link h4">Timeline of Sapiens</a>
+                </li>
+                <li>
+                    <a href="/" class="nav-link navpad">Full Timeline</a>
+                </li>
+                <li>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a href="/abridged" class="nav-link navpad">Abridged</a>
+                </li>
+                <li>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a href="/about" class="nav-link navpad">About</a>
+                </li>
+            </ul>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <footer class="bg-light">
+        <hr>
+        Quotes taken from <a href="https://www.ynharari.com/book/sapiens-2/">Sapiens</a> by
+        <a href="https://www.ynharari.com/about/">Yuval Noah Harari</a>
+        <br>
+        Site Created 2020 by Jesse Tymas. <!--suppress HtmlUnknownTarget -->
+        <a href="/about">About this page</a>
+        <br>
+        <br>
+    </footer>
+</body>
+</html>
